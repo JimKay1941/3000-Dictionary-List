@@ -29,14 +29,14 @@ namespace _3000_Dictionary_List
             {
                 var newrow = new _3000_Character
                 {
-                    FEseq = dataGridFE_3000.CurrentRow.Cells[1].EditedFormattedValue.ToString(),
-                    Zhuyin = dataGridFE_3000.CurrentRow.Cells[2].EditedFormattedValue.ToString(),
-                    Traditional = dataGridFE_3000.CurrentRow.Cells[3].EditedFormattedValue.ToString(),
-                    English = dataGridFE_3000.CurrentRow.Cells[4].EditedFormattedValue.ToString(),
-                    Numpinyin = dataGridFE_3000.CurrentRow.Cells[5].EditedFormattedValue.ToString(),
-                    CritPinyin = dataGridFE_3000.CurrentRow.Cells[6].EditedFormattedValue.ToString(),
-                    Simplified = dataGridFE_3000.CurrentRow.Cells[7].EditedFormattedValue.ToString(),
-                    Cji = dataGridFE_3000.CurrentRow.Cells[8].EditedFormattedValue.ToString()
+                    FEseq = dataGridFE_3000.CurrentRow?.Cells[1].EditedFormattedValue.ToString(),
+                    Zhuyin = dataGridFE_3000.CurrentRow?.Cells[2].EditedFormattedValue.ToString(),
+                    Traditional = dataGridFE_3000.CurrentRow?.Cells[3].EditedFormattedValue.ToString(),
+                    English = dataGridFE_3000.CurrentRow?.Cells[4].EditedFormattedValue.ToString(),
+                    Numpinyin = dataGridFE_3000.CurrentRow?.Cells[5].EditedFormattedValue.ToString(),
+                    CritPinyin = dataGridFE_3000.CurrentRow?.Cells[6].EditedFormattedValue.ToString(),
+                    Simplified = dataGridFE_3000.CurrentRow?.Cells[7].EditedFormattedValue.ToString(),
+                    Cji = dataGridFE_3000.CurrentRow?.Cells[8].EditedFormattedValue.ToString()
                 };
 
 
