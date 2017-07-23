@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ChineseStudy" Class="ChineseStudyDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ACER0;Initial Catalog=ChineseStudy;Integrated Security=True" SettingsObjectName="_3000_Dictionary_List.Properties.Settings" SettingsPropertyName="ChineseStudyConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.[_3000_Characters]" Member="_3000_Characters">
+    <Type Name="_3000_Character">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FEseq" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Zhuyin" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Traditional" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="English" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Numpinyin" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CritPinyin" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Simplified" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Cji" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UniHan" Member="UniHans">
+    <Type Name="UniHan">
+      <Column Name="cp" Type="System.String" DbType="NVarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="kJa" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kCompatibilityVariant" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kRSUnicode" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kIRG_GSource" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kIRG_TSource" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kIRG_JSource" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kIRG_KSource" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kIRG_KPSource" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kIRG_VSource" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kIRG_HSource" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kIRG_USource" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kIRG_MSource" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kCantonese" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kDefinition" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kHanYu" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kMandarin" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kCangjie" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kSemanticVariant" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kIRGHanyuDaZidian" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="kIRGKangXi" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="kTotalStrokes" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="kCihaiT" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kSBGY" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kHanyuPinyin" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kJIS0213" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kNelson" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kRSAdobe_Japan1_6" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="nt" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="nv" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="kCowles" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kMatthews" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kOtherNumeric" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="kPhonetic" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kKPS1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kGSR" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kFenn" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kFennIndex" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kKarlgren" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kHKSCS" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kXHC1983" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kMeyerWempe" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kTraditionalVariant" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kVietnamese" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kSimplifiedVariant" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kSpecializedSemanticVariant" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kLau" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kRSKanWa" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kCheungBauer" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kCheungBauerIndex" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kIICore" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kTang" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kZVariant" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kRSKangXi" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kJapaneseKun" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kJapaneseOn" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kKangXi" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kKPS0" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kMorohashi" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kGB0" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kGB1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kCNS1986" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kCNS1992" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kJis0" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kKSC0" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kHangul" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kBigFive" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kCCCII" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kDaeJaweon" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kEACC" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kFrequency" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kGradeLevel" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kHDZRadBreak" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kHKGlyph" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kHanyuPinlu" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kIRGDaeJaweon" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kIRGDaiKanwaZiten" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kKorean" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kMainlandTelegraph" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kPrimaryNumeric" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kTaiwanTelegraph" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kXerox" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kFourCornerCode" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kGB5" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kJis1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kPseudoGB1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kGB3" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kGB8" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kKSC1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kIBMJapan" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kRSJapanese" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kAccountingNumeric" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kRSKorean" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="kGB7" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CeDictFull" Member="CeDictFulls">
+    <Type Name="CeDictFull">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BoPoMoFo" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Traditional" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Simplified" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Pinyin" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="English" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

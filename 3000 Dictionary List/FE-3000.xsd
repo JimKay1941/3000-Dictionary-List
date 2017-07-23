@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ChineseStudyDataSet" targetNamespace="http://tempuri.org/ChineseStudyDataSet1.xsd" xmlns:mstns="http://tempuri.org/ChineseStudyDataSet1.xsd" xmlns="http://tempuri.org/ChineseStudyDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="ChineseStudyDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="_x0033_000-Characters">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="FEseq" type="xs:string" minOccurs="0" />
+              <xs:element name="Zhuyin" type="xs:string" minOccurs="0" />
+              <xs:element name="Traditional" type="xs:string" minOccurs="0" />
+              <xs:element name="English" type="xs:string" minOccurs="0" />
+              <xs:element name="NumPinyin" type="xs:string" minOccurs="0" />
+              <xs:element name="CritPinyin" type="xs:string" minOccurs="0" />
+              <xs:element name="Simplified" type="xs:string" minOccurs="0" />
+              <xs:element name="Cji" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

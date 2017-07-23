@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 19.625" name="ChineseStudy">
+  <DataContextMoniker Name="/ChineseStudyDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2549c676-b5c4-4b16-babe-aa59f8afe937" absoluteBounds="7.625, 0.5, 2, 2.5401025390625">
+      <DataClassMoniker Name="/ChineseStudyDataContext/_3000_Character" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a33975cc-ff00-45c8-b763-36607e80e3e0" absoluteBounds="7.6400000000000006, 0.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a706d167-ca7c-45f6-8c7f-df6d3446010d" absoluteBounds="5.125, 0.5, 2, 18.885724283854167">
+      <DataClassMoniker Name="/ChineseStudyDataContext/UniHan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fa63dcba-fbc5-47d4-850f-7c51c428e023" absoluteBounds="5.14, 0.96, 1.9700000000000002, 18.325724283854164" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="70ae277c-9fcc-4aa2-93b3-6d870977d59e" absoluteBounds="2.625, 0.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/ChineseStudyDataContext/CeDictFull" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1f48ae6f-fdf8-4b8b-b481-538e236c513e" absoluteBounds="2.64, 0.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
