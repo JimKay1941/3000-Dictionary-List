@@ -255,14 +255,14 @@ namespace _3000_Dictionary_List
                 }
 
 
-				for (var i = 0; i < foundBo.Count; i++)
-				{
-				    if (textBopo.Text != foundBo[i]) continue;
-				    foundBo[0] = foundBo[i];
-				    boCount = 1;
+                for (var i = 0; i < foundBo.Count; i++)
+                {
+                    if (textBopo.Text != foundBo[i]) continue;
+                    foundBo[0] = foundBo[i];
+                    boCount = 1;
 
                     var pin1 = Traditional.TryGetBoPin(textBopo.Text, out foundPin);
-                    
+
                     if (!pin1)
                     {
                         Status.Text = @"BoPin failed on: " + textBopo.Text;
@@ -271,11 +271,11 @@ namespace _3000_Dictionary_List
                         return;
                     }
 
-				    pinCount = 1;
-				    textBopo.Text = "";
-				    break;
-				}
-			}
+                    pinCount = 1;
+                    textBopo.Text = "";
+                    break;
+                }
+            }
 
 			if ((pinCount == 1) && (boCount == 1))
 			{
