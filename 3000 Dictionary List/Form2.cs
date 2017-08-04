@@ -13,6 +13,7 @@ namespace _3000_Dictionary_List
 
         private void Form2_Load(object sender, EventArgs e)
         {
+
             object[] row = { Variables.Id.ToString(CultureInfo.InvariantCulture), Variables.FEseq, Variables.Zhuyin, Variables.Traditional, Variables.English, Variables.NumPinyin, Variables.CritPinyin, Variables.Simplified, Variables.Cji };
             dataGridFE_3000.Rows.Add(row); 
         }
@@ -39,7 +40,24 @@ namespace _3000_Dictionary_List
                     Cji = dataGridFE_3000.CurrentRow?.Cells[8].EditedFormattedValue.ToString()
                 };
 
-
+                switch (newrow.FEseq.Length)
+                {
+                    case 1:
+                        newrow.FEseq = "00000" + newrow.FEseq;
+                        break;
+                    case 2:
+                        newrow.FEseq = "0000" + newrow.FEseq;
+                        break;
+                    case 3:
+                        newrow.FEseq = "000" + newrow.FEseq;
+                        break;
+                    case 4:
+                        newrow.FEseq = "00" + newrow.FEseq;
+                        break;
+                    case 5:
+                        newrow.FEseq = "0" + newrow.FEseq;
+                        break;
+                }
 
                 fe._3000_Characters.InsertOnSubmit(newrow);
                 fe.SubmitChanges();
